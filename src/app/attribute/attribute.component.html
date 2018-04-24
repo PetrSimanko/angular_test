@@ -1,0 +1,11 @@
+<br/><br/>
+
+<h3>ngStyle</h3>
+<div [ngStyle]="{'font-size':sizeFont+'px'}">Текст</div>
+<button (click)="add()">add</button>
+<br>
+<h3>ngClass</h3>
+<div [ngClass]="{boldFont:false}">Текст</div>
+<div [ngClass]="{boldFont:true, redFont: isRed}">Текст</div>
+<div [class.redFont]="!isRed">Текст</div>
+<button (click)="red()">red</button>

@@ -1,0 +1,22 @@
+<br/><br/>
+
+<h3>ngIF</h3>
+<div *ngIf="isShow">
+  Показать текст
+</div>
+<button (click)="show()">Show/Hide</button>
+
+<h3>ngFor</h3>
+<div>
+  <div *ngFor="let step of listSteps; index as i">
+  {{i + 1}}. {{step}}
+</div>
+</div>
+
+<h3>ngSwitch</h3>
+<div [ngSwitch]="step">
+  <div *ngSwitchCase="1">1</div>
+  <div *ngSwitchCase="2">2</div>
+  <div *ngSwitchDefault>3</div>
+</div>
+<button (click)="add()">add</button>
